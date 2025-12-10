@@ -7,7 +7,7 @@ namespace Studio24\LaravelAccessibleForms\Tests;
 use Barryvdh\Form\Facade\FormFactory;
 use Barryvdh\Form\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Studio24\LaravelAccessibleForms\AccessibleFormsServiceProvider;
+use Studio24\LaravelAccessibleForms\ServiceProvider;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 
@@ -18,7 +18,7 @@ class BladeTest extends Orchestra
     {
         return [
             ServiceProvider::class,
-            AccessibleFormsServiceProvider::class,
+            ServiceProvider::class,
         ];
     }
 

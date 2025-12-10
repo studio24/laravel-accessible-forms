@@ -10,7 +10,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Studio24\AccessibleForms\Twig\AccessibleFormsExtension;
 use Studio24\LaravelAccessibleForms\Facade\FormRenderer as FormRendererFacade;
 
-class AccessibleFormsServiceProvider extends PackageServiceProvider
+class ServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {

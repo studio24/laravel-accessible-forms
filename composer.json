@@ -46,11 +46,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Studio24\\AccessibleForms\\AccessibleFormsServiceProvider"
-            ],
-            "aliases": {
-                "AccessibleForms": "Studio24\\AccessibleForms\\Facades\\AccessibleForms"
-            }
+                "Studio24\\LaravelAccessibleForms\\ServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
