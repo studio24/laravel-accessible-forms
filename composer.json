@@ -1,15 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "studio24/laravel-accessible-forms",
+    "description": "Create more accessible forms in your Laravel apps",
     "keywords": [
         "studio24",
         "laravel"
     ],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/studio24/laravel-accessible-forms",
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "studio24/accessible-forms": "dev-main"
     },
     "require-dev": {
         "illuminate/contracts": "^12.0",
@@ -22,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\PackageTemplate\\": "src"
+            "Studio24\\LaravelAccessibleForms\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\PackageTemplate\\Tests\\": "tests"
+            "Studio24\\LaravelAccessibleForms\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PackageTemplateServiceProvider"
+                "Studio24\\AccessibleForms\\AccessibleFormsServiceProvider"
             ],
             "aliases": {
-                "PackageTemplate": "VendorName\\PackageTemplate\\Facades\\PackageTemplate"
+                "AccessibleForms": "Studio24\\AccessibleForms\\Facades\\AccessibleForms"
             }
         }
     },

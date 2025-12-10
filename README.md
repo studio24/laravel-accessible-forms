@@ -1,50 +1,59 @@
-# PHP Package Template
+# Laravel accessible forms
 
-A repository template for Studio 24's open source Laravel packages.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/studio24/laravel-accessible-forms.svg?style=flat-square)](https://packagist.org/packages/studio24/laravel-accessible-forms)
+[![Tests](https://img.shields.io/github/actions/workflow/status/studio24/laravel-accessible-forms/php.yml?branch=main&label=tests&style=flat-square)](https://github.com/studio24/laravel-accessible-forms/actions/workflows/php.yml)
 
-## How to use this template
+Create more accessible forms in your Laravel apps
 
-This package can be used as to scaffold a PHP package. Follow these steps to get started:
+## Requirements
 
-1. Press the "Use template" button at the top of this repo to create a new repo with the contents of this skeleton
-2. Run `php ./configure.php` to run a script that will replace all placeholders throughout all the files
-3. Have fun creating your package.
+* PHP 8.2+
 
-## Components
+## Installation
 
-A brief explanation of the different components of this package template.
+You can install the package via [Composer](https://getcomposer.org/):
 
-- `.github/ISSUE_TEMPLATE` - GitHub issue templates
-- `.github/workflows` - GitHub actions for running tests (php.yml) and automated releases (release.yml)
-- `.github/dependabot.yml` - Dependabot configuration
-- `config` - Config file for your Laravel package
-- `database` - Laravel database files (factories and migrations)
-- `resources` - Laravel resources (templates)
-- `src/` - The PHP source code for your Laravel package, this will autoload based on the autoload rules in composer.json
-- `src/Commands` - Laravel artisan command
-- `src/Facades` - Laravel facades
-- `src/ExampleClass.php` - An example class
-- `src/PackageTemplateServiceProvider.php` - Service Provider for your Laravel package
-- `tests` - PHPUnit tests for your package
-- `.editorconfig` - Your [editor coding style](https://editorconfig.org/) configuration
-- `.gitattributes` - Ignore these files/folders when this package is installed via Composer
-- `.phpcs.xml.dist` - [PHPCodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer/) configuration
-- `.phplint.yml` - [PHPLint](https://github.com/overtrue/phplint) configuration
-- `CHANGELOG.md` - A list of notable changes, the contents of this file are automated by automated releases
-- `CODE_OF_CONDUCT.md` - Contributor's code of conduct
-- `composer.json` - Composer PHP package dependencies
-- `configure.php` - Package configuration script, this file is deleted after configure.php is run
-- `CONTRIBUTING.md` - Guide to contributing
-- `LICENSE.md` - License information
-- `phpstan.neon` - [PHPStan](https://phpstan.org/) configuration
-- `phpunit.xml.dist` - [PHPUnit](https://phpunit.de/) configuration
-- `README.md` - This README file, this file is deleted once configure.php is run
-- `README_DEFAULT.md` - The default README file for your new package, this file is copied to README.md after configure.php is run
-- `SECURITY.md` - Security policy for this package
+```shell
+composer require studio24/laravel-accessible-forms
+```
+
+## Usage
+
+Installs the following package in your Laravel app:
+- [studio24/accessible-forms](https://github.com/studio24/accessible-forms)
+  - [barryvdh/laravel-form-bridge](https://github.com/barryvdh/laravel-form-bridge)
+  - [symfony/form](https://github.com/symfony/form)
+
+And sets up accessible forms in your Laravel app:
+- Adds AccessibleFormsServiceProvider
+- Registers Twig helpers
+- Registers Blade directives
+- Defaults to the `accessible-forms.html.twig` form theme
+
+For more, see the documentation for [accessible-forms](https://github.com/studio24/accessible-forms/tree/main/docs).
+
+## Testing
+
+```shell
+composer test
+```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Find out more about [how to contribute](CONTRIBUTING.md) and our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Security Issues
+
+If you discover a security vulnerability within this package, please follow our [disclosure procedure](SECURITY.md).
+
+## About
+
+This package is developed by [Studio 24](https://www.studio24.net/), a human-centered digital agency who build websites and web apps that work for everyone.
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Thanks to
-* [Spatie Laravel Package Skeleton](https://github.com/spatie/package-skeleton-laravel) 
